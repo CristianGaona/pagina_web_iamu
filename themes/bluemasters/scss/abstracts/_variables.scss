@@ -1,0 +1,38 @@
+// Colors
+$bg-color: #1370FB;
+$dot-color: #3882E8;
+
+// Dimensions
+$dot-size: 2px;
+$dot-space: 22px;
+$dimgrey: #696969;
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+@mixin heading-com {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  line-height: 120%;
+  padding: 0;
+}
+
+@mixin border-bottom($color) {
+  border-bottom: 5px solid $color;
+}
+$break-xsmall: 414px;
+$break-small: 768px;
+$break-medium: 1023px;
+$break-large: 1024px;
+$black-color: #000000;
+$heading-dark-color: #fff;
+$heading-light-color: #555555;
+$heading-lighter-color: #777777;
+$base-color: #737272;
+$red-light-color: #f26a54;
+$red-dark-color: #de3d23;
+$red-color: #e24c35;
+$font-oswald: 'Oswald', sans-serif;
+$font-opensans: 'Open Sans', sans-serif;
+$font-noto: 'Noto Sans', sans-serif;
+$btn-animation: all 0.3s;
+$white-color: #ffffff;

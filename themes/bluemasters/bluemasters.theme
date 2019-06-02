@@ -1,0 +1,63 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ * Implements Template Preprocess Page.
+ */use Drupal\file\Entity\File;
+
+/**
+ *
+ */
+function bluemasters_preprocess_page(&$variables) {
+  $variables['slideshow_display'] = theme_get_setting('slideshow_display', 'bluemasters');
+  // Slide1 Image.
+  $fid = theme_get_setting("slide1_image", "bluemasters");
+  if (!empty($fid)) {
+    $file = File::load($fid[0]);
+    $uri = $file->getFileUri();
+    $image_path = file_create_url($uri);
+  }
+  else {
+    $image_path = drupal_get_path('theme', 'bluemasters') . '/images/slide-image-1.jpg';
+  }
+  $variables['slide1_image'] = $image_path;
+  // Slide2 Images.
+  $fid = theme_get_setting("slide2_image", "bluemasters");
+  if (!empty($fid)) {
+    $file = File::load($fid[0]);
+    $uri = $file->getFileUri();
+    $image_path = file_create_url($uri);
+  }
+  else {
+    $image_path = drupal_get_path('theme', 'bluemasters') . '/images/slide-image-2.jpg';
+  }
+  $variables['slide2_image'] = $image_path;
+
+
+  // Slide3 Image.
+  $fid = theme_get_setting("slide3_image", "bluemasters");
+  if (!empty($fid)) {
+    $file = File::load($fid[0]);
+    $uri = $file->getFileUri();
+    $image_path = file_create_url($uri);
+  }
+  else {
+    $image_path = drupal_get_path('theme', 'bluemasters') . '/images/slide-image-3.jpg';
+  }
+
+// Slide4 Image.
+  $fid = theme_get_setting("slide4_image", "bluemasters");
+  if (!empty($fid)) {
+    $file = File::load($fid[0]);
+    $uri = $file->getFileUri();
+    $image_path = file_create_url($uri);
+  }
+  else {
+    $image_path = drupal_get_path('theme', 'bluemasters') . '/images/slide-image-4.jpg';
+  }
+
+  $variables['slide3_image'] = $image_path;
+}

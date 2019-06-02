@@ -1,0 +1,48 @@
+.sidebar-region{
+	background:#fff;
+	border-radius: 2px;
+	border: 6px solid #1A1B24;
+	margin-bottom: 20px;
+  margin-top: 20px;
+	.content-region{
+    img {
+      width: 90%;
+      height: 50%;
+      border: 1px solid #ced1da;
+    background: #eef0f5;
+    padding: 1%;
+    margin: 20px 0;
+    }
+    blockquote{
+      border: 1px solid #ced1da;
+    background: #eef0f5;
+    margin: 20px 0;
+    padding: 20px;
+    color: #788093;
+    font-weight: bold;
+    font-style: italic;
+    width: 90%;
+    }
+	}
+.right-sidebar-region{
+	background-color: white; 
+  background:#C0C0C0;
+	h2{
+		background: $dimgrey;
+		padding-left: 15px;
+		color: #fff;
+	}	
+	ul{
+			display: grid;
+      margin: 0px;
+      li{
+      padding:10px;
+    }
+		}
+    .user-login-form{
+      padding-left: 30px;
+    }
+
+}	
+
+}

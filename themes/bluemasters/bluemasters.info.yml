@@ -1,0 +1,32 @@
+name: Blue Masters
+type: theme
+description: 'Bluemasters theme in Drupal 8'
+# core: 8.x
+base theme: stable
+regions:
+  header: 'Header'
+  search_area: 'Search area'
+  highlighted: 'Highlighted'
+  site_info: 'Site information'
+  navigation: 'navigation'
+  content: 'Content'
+  sidebar_right: 'Sidebar Right'
+  blogs_area_1: 'Blogs area 1'
+  blogs_area_2: 'Blogs area 2'
+  blogs_area_3: 'Blogs area 3' 
+  footer_left_1: 'Footer left 1'
+  footer_left_2: 'Footer left 2'
+  footer_center: 'Footer center'
+  footer_right: 'Footer right'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+  - bluemasters/global-styling
+  - bluemasters/attributes
+# Information added by Drupal.org packaging script on 2019-04-08
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'bluemasters'
+datestamp: 1554699187
