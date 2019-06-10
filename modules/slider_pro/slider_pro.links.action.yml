@@ -1,0 +1,5 @@
+entity.slider_pro.add_form:
+  route_name: 'entity.slider_pro.add_form'
+  title: 'Add optionset'
+  appears_on:
+    - entity.slider_pro.collection

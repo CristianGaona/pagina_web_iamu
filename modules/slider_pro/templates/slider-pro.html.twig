@@ -1,0 +1,30 @@
+<div class="slider-pro" id="{{ id }}">
+    <div class="sp-slides">
+        {% for row in rows %}
+            <div class="sp-slide">
+                {% for field in row.slide %}
+                    <div>{{ field }}</div>
+                {% endfor %}
+                {% if uses_thumbnails %}
+                    <div class="sp-thumbnail">
+                        {% for field in row.thumb %}
+                            {{ field }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                {% for layer in row.layers %}
+                    <div class="sp-layer sp-padding {{ layer.background }}"
+                         data-position="{{ layer.position }}"
+                         data-show-transition="{{ layer.show_transition }}"
+                         data-hide-transition="{{ layer.hide_transition }}"
+                         data-show-delay="{{ layer.show_delay }}"
+                         data-stay-duration="{{ layer.stay_duration }}">
+                        {% for field in layer.content %}
+                            {{ field }}
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,7 @@
+# Slider Pro optionset menu items definition
+entity.slider_pro.collection:
+  title: 'Slider Pro'
+  description: 'Configure optionsets.'
+  route_name: entity.slider_pro.collection
+  parent: system.admin_config_media
+  weight: 100

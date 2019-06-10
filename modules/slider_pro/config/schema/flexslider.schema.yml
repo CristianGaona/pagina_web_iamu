@@ -1,0 +1,111 @@
+slider_pro.optionset.*:
+  type: config_entity
+  label: 'Slider Pro optionset'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    options:
+      type: mapping
+      label: 'Options'
+      mapping:
+        # General options
+        width:
+          type: string
+          label: 'Width'
+        height:
+          type: string
+          label: 'Height'
+        visible_size:
+          type: string
+          label: 'Visible size'
+        force_size:
+          type: string
+          label: 'Force size'
+        orientation:
+          type: string
+          label: 'Orientation'
+        buttons:
+          type: boolean
+          label: 'Buttons'
+        transition:
+          type: boolean
+          label: 'Transition'
+        arrows:
+          type: boolean
+          label: 'Arrows'
+        # Thumbnail options
+        thumbnail_position:
+          type: string
+          label: 'Position'
+        thumbnail_width:
+          type: integer
+          label: 'Width'
+        thumbnail_height:
+          type: integer
+          label: 'Height'
+        thumbnail_pointer:
+          type: boolean
+          label: 'Thumbnail pointer'
+        thumbnail_arrows:
+          type: boolean
+          label: 'Thumbnail arrows'
+        fade_thumbnail_arrows:
+          type: boolean
+          label: 'Fadet humbnail arrows'
+        # Layer options
+        wait_for_layers:
+          type: boolean
+          label: 'Wait for layers'
+        auto_scale_layers:
+          type: boolean
+          label: 'Auto scale layers'
+        # Advanced options
+        center_image:
+          type: boolean
+          label: 'Center image'
+        allow_scale_up:
+          type: boolean
+          label: 'Allow scale up'
+        start_slide:
+          type: integer
+          label: 'Start slide'
+        auto_height:
+          type: boolean
+          label: 'Auto height'
+        shuffle:
+          type: boolean
+          label: 'Shuffle'
+        loop:
+          type: boolean
+          label: 'Loop'
+        autoplay:
+          type: boolean
+          label: 'autoplay'
+        autoplay_delay:
+          type: integer
+          label: 'Autoplay delay'
+        autoplay_direction:
+          type: string
+          label: 'Autoplay direction'
+        autoplay_on_hover:
+          type: string
+          label: 'Autoplay on hover'
+        slide_distance:
+          type: integer
+          label: 'Slide distance'
+        keyboard:
+          type: boolean
+          label: 'Keyboard'
+        full_screen:
+          type: boolean
+          label: 'Full screen'
+        fade_full_screen:
+          type: boolean
+          label: 'Fade full screen'
+        update_hash:
+          type: boolean
+          label: 'Update hash'

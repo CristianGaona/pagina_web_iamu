@@ -1,0 +1,9 @@
+{
+    "name": "drupal/slider_pro",
+    "description": "Integrate the Slider Pro library with Drupal.",
+    "type": "drupal-module",
+    "license": "GPL-2.0+",
+    "require" : {
+        "bqworks/slider-pro": "~1.2.2"
+    }
+}

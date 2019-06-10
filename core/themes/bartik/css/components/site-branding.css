@@ -3,7 +3,7 @@
  * Visual styles for the site branding block in Bartik.
  */
 
-.site-branding__logo {
+ .site-branding__logo {
   display: inline-block;
   margin-right: 1em; /* LTR */
   margin-bottom: 0.286em;

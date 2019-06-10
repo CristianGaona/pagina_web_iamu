@@ -1,0 +1,36 @@
+status: true
+dependencies: {  }
+id: default
+label: Default
+options:
+  width: 100%
+  visible_size: auto
+  force_size: none
+  height: 200px
+  orientation: horizontal
+  buttons: false
+  transition: false
+  arrows: false
+  thumbnail_position: '0'
+  thumbnail_width: 100
+  thumbnail_height: 80
+  thumbnail_pointer: false
+  thumbnail_arrows: false
+  fade_thumbnail_arrows: true
+  wait_for_layers: false
+  auto_scale_layers: true
+  center_image: true
+  allow_scale_up: true
+  auto_height: false
+  slide_distance: 10
+  start_slide: 0
+  shuffle: false
+  loop: true
+  autoplay: true
+  autoplay_delay: 5000
+  autoplay_direction: normal
+  autoplay_on_hover: pause
+  keyboard: true
+  full_screen: false
+  fade_full_screen: true
+  update_hash: false

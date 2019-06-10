@@ -1,0 +1,30 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function slider_pro_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.slider_pro':
+      $output = file_get_contents(drupal_get_path('module', 'slider_pro') . '/README.md');
+      return '<pre>' . $output . '</pre>';
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function slider_pro_theme() {
+  return [
+    'slider_pro' => [
+      'variables' => [
+        'rows' => [],
+        'id' => NULL,
+        'uses_thumbnails' => FALSE,
+      ],
+      'template' => 'slider-pro',
+    ],
+  ];
+}

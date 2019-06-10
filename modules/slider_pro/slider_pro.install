@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * Implements hook_requirements().
+ */
+function slider_pro_requirements($phase) {
+  $requirements = array();
+
+  if ($phase == 'runtime') {
+    $requirements['slider_pro']['title'] = 'Slider Pro';
+    $requirements['slider_pro']['value'] = t('Installed');
+
+    if (file_exists(DRUPAL_ROOT . '/libraries/slider-pro/dist/js/jquery.sliderPro.min.js')) {
+      $requirements['slider_pro']['severity'] = REQUIREMENT_OK;
+    }
+    else {
+      // Required lightgallery library wasn't found.
+      $requirements['slider_pro']['value'] = t('Not found');
+
+      // Provide a download link to the lightgallery jQuery plugin.
+      $requirements['slider_pro']['description'] = t('The <a href="@slider_pro" target="_blank">Slider Pro</a> jQuery plugin is missing. See <a href="@readme">README.md</a> for instructions on how to download and extract it.', array(
+        '@slider_pro' => 'https://github.com/bqworks/slider-pro',
+        '@readme' => '/' . drupal_get_path('module', 'slider_pro') . '/README.md',
+      ));
+      $requirements['slider_pro']['severity'] = REQUIREMENT_ERROR;
+    }
+  }
+
+  return $requirements;
+}

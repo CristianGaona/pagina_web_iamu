@@ -1,0 +1,40 @@
+# Slider Pro optionset routing definition
+entity.slider_pro.collection:
+  path: '/admin/config/media/slider-pro'
+  defaults:
+    _entity_list: 'slider_pro'
+    _title: 'Slider Pro'
+  requirements:
+    _permission: 'administer slider pro'
+  options:
+    _admin_route: TRUE
+
+entity.slider_pro.add_form:
+  path: '/admin/config/media/slider-pro/add'
+  defaults:
+    _entity_form: 'slider_pro.add'
+    _title: 'Add Slider Pro optionset'
+  requirements:
+    _permission: 'administer slider pro'
+  options:
+    _admin_route: TRUE
+
+entity.slider_pro.edit_form:
+  path: '/admin/config/media/slider-pro/{slider_pro}'
+  defaults:
+    _entity_form: 'slider_pro.edit'
+    _title: 'Edit Slider Pro optionset'
+  requirements:
+    _permission: 'administer slider pro'
+  options:
+    _admin_route: TRUE
+
+entity.slider_pro.delete_form:
+  path: '/admin/config/media/slider-pro/{slider_pro}/delete'
+  defaults:
+    _entity_form: 'slider_pro.delete'
+    _title: 'Delete optionset'
+  requirements:
+    _permission: 'administer slider pro'
+  options:
+    _admin_route: TRUE

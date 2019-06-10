@@ -1,0 +1,4 @@
+services:
+  slider_pro.manager:
+    class: Drupal\slider_pro\Manager\SliderProManager
+    arguments: []
