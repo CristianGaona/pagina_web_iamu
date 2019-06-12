@@ -18,9 +18,12 @@ body{
   line-height: 1.62em;
   color: #444;
   overflow-x: hidden;
+
 }
 
-p{ margin: 0 0 20px 0; }
+p{ margin: 0 0 20px 0;
+  text-align: justify;
+}
 
 .h1, .h2, .h3, h1, h2, h3 {
   margin-top: 10px;
@@ -166,7 +169,7 @@ ul.links.inline li{
 
 .footerwidget{
   background: #272727;
-  color: #8A8A8A;
+  color: white;
   padding: 10px 0;
 }
 

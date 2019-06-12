@@ -1,0 +1,9 @@
+.views-view-grid .views-col {
+    float: left;
+    padding: 6px;
+    border: 2px solid red;
+    border-radius: 25px;
+}
+.views-row clearfix row-1:hover{
+  background-color: yellow;
+}
