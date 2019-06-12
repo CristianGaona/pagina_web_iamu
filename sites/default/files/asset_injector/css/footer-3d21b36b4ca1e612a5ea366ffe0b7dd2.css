@@ -1,0 +1,24 @@
+.views-view-grid .views-col {
+    float: left;
+    padding: 6px;
+   
+}
+.views-col col1{
+   width:45%;
+}
+.views-row clearfix row-1:hover{
+  background-color: yellow;
+}
+
+div#block-subscripcion {
+    background: azure;
+}
+
+
+.col-md-9 {
+    background: aliceblue;
+}
+
+.views-col, col-1{
+      height: 560px
+}
